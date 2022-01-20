@@ -60,6 +60,18 @@ namespace _21stMortgageInterviewApplication
             }
 
             maxNumber = numList.Max();
+
+            if (maxNumber >= 0)
+            {
+                result_color.Background = Brushes.Green;
+                result_textbox.FontSize = 12;
+            }else if(maxNumber < 0)
+            {
+                result_color.Background = Brushes.Red;
+                result_textbox.FontSize = 16;
+                result_textbox.FontFamily = new FontFamily("Arial");
+            }
+
             result_textbox.Text = Convert.ToString(maxNumber);
         }
 
@@ -80,12 +92,16 @@ namespace _21stMortgageInterviewApplication
                 }
             }
 
-            if (sum > 0)
+            if (sum >= 0)
             {
                 result_color.Background = Brushes.Green;
-            }else if(sum < 0)
+                result_textbox.FontSize = 12;
+            }
+            else if(sum < 0)
             {
                 result_color.Background = Brushes.Red;
+                result_textbox.FontSize = 16;
+                result_textbox.FontFamily = new FontFamily("Arial");
             }
 
             result_textbox.Text = Convert.ToString(sum);
@@ -108,13 +124,16 @@ namespace _21stMortgageInterviewApplication
                 }
             }
 
-            if (sum > 0)
+            if (sum >= 0)
             {
                 result_color.Background = Brushes.Green;
+                result_textbox.FontSize = 12;
             }
             else if (sum < 0)
             {
                 result_color.Background = Brushes.Red;
+                result_textbox.FontSize = 16;
+                result_textbox.FontFamily = new FontFamily("Arial");
             }
 
             result_textbox.Text = Convert.ToString(sum);
