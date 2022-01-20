@@ -14,12 +14,28 @@
         <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="85,32,0,0" VerticalAlignment="Top"/>
         <Label x:Name="input_lable" Content="Input textbox" HorizontalAlignment="Left" Margin="551,40,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="user_input" HorizontalAlignment="Left" Margin="36,81,0,0" Text="User Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="46" VerticalContentAlignment="Center" TextAlignment="Center" TextChanged="user_input_TextChanged" Foreground="#FFAA9E9E" BorderBrush="#FF939393" SelectionTextBrush="White"/>
-        <Button x:Name="largest" Content="Find Largest Value" HorizontalAlignment="Left" Margin="64,197,0,0" VerticalAlignment="Top" Height="38" Width="130" Click="button_Click"/>
-        <Button x:Name="odd_sum" HorizontalAlignment="Left" Margin="296,0,0,0" VerticalAlignment="Center" Height="38" Width="140" Click="odd_sum_Click">
-            <TextBlock Text="Find Sum of Odd Numbers" TextWrapping="Wrap" TextAlignment="Center"/>
+        <Button x:Name="largest" Content="Find Largest Value" HorizontalAlignment="Left" Margin="68,197,0,0" VerticalAlignment="Top" Height="38" Width="130" Click="button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
         </Button>
-        <Button x:Name="even_sum" HorizontalAlignment="Left" Margin="536,197,0,0" VerticalAlignment="Top" Height="38" Width="130" Click="even_sum_Click">
+        <Button x:Name="odd_sum" HorizontalAlignment="Left" Margin="295,203,0,0" VerticalAlignment="Top" Height="38" Width="140" Click="odd_sum_Click">
+            <TextBlock Text="Find Sum of Odd Numbers" TextWrapping="Wrap" TextAlignment="Center"/>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="even_sum" HorizontalAlignment="Left" Margin="549,203,0,0" VerticalAlignment="Top" Height="38" Width="130" Click="even_sum_Click">
             <TextBlock Text="Find Sum of even Numbers" TextWrapping="Wrap" TextAlignment="Center"/>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
         </Button>
         <Label x:Name="label_Copy1" Content="Button" HorizontalAlignment="Left" Margin="110,153,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy2" Content="Button" HorizontalAlignment="Left" Margin="342,161,0,0" VerticalAlignment="Top"/>
